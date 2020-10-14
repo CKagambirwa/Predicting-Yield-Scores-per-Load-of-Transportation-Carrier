@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?><_ROOT_ EMVERSION="15.1" ORIENTATION="HORIZONTAL">
+<Workspace>
+<NODES>
+<NODE CLASS="SASHELP.EMMODL.AUTONEURAL.CLASS" COMPONENT="AutoNeural" ID="AutoNeural" X="1265" Y="305" DESCRIPTION="AutoNeural" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="AutoNeural">
+<PROPERTIES Architecture="SINGLE LAYER" TrainAction="SEARCH" Termination="OVERFITTING" TargetError="DEFAULT" Hidden="2" TotalHidden="30" MaxIter="8" AdjustIterations="Y" FinalTrain="Y" FinalIter="5" TotalTime="1 HOUR" Freeze="N" Direct="N" Tanh="Y" Normal="N" Sine="N" Exponential="N" Identity="N" Logistic="N" Reciprocal="N" Softmax="N" Square="N" Tolerance="MEDIUM" Residuals="Y" Standardizations="N" HiddenUnits="N" outfit="" weights="" estds="" Bestds="" HistoryDs="" ForceRun="N" RunAction="Train" Component="AutoNeural">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMUTIL.CONTROLPOINT.CLASS" COMPONENT="ControlPoint" ID="CNTRL" X="1472" Y="206" DESCRIPTION="Control Point" DIAGRAMID="_ROOT_" PARENTID="">
+<PROPERTIES/>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.ENSEMBLE.CLASS" COMPONENT="Ensemble" ID="Ensmbl" X="1600" Y="288" DESCRIPTION="Ensemble" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Ensmbl">
+<PROPERTIES Predicted="AVERAGE" Posterior="AVERAGE" VotingPosterior="AVERAGE" ForceRun="N" RunAction="Train" Component="Ensemble">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.IDS.CLASS" COMPONENT="DataSource" ID="Ids" X="283" Y="65" DESCRIPTION="NEW_COLS_AA2" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Ids">
+<PROPERTIES DataSource="newcolsaa1" Scope="LOCAL" Role="RAW" Library="LIB" Table="NEW_COLS_AA2" NCols="69" NObs="299527" NBytes="163709952" Segment="" DataSourceRole="RAW" OutputType="VIEW" ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC" ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y" MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y" VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="newcolsaa1" DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="u47520935" DsCreateDate="1903450905.1" DsModifiedBy="u47520935" DsModifyDate="1903450905.1" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT" SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train" Component="DataSource" Description="">
+<VariableProperties/>
+<EmVariableAttributes>
+<DELTA Variable="Acc_Rev" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Delay" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Delay" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Delay" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Dest_Area" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Dest_Area" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Dst_Mkt" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Dst_Mkt" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Dst_Mkt" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Dst_State" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Dst_State" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Dst_Zip" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Dst_Zip" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Dst_Zip" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Dst_city" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Dst_city" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Dwell" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Dwell" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Dwell" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="FSC" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="FWD_Yield" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="FWD_Yield" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="FWD_Yield" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="IT_delay" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="IT_delay" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="IT_delay" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Lane" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Lane" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Ld_time" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Ld_time" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Ld_time" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Loaded_Miles" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="MAR" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="MAR" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="MAR" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Margin" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Margin" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Margin" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Mpd_In" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Mpd_In" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Mpd_In" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Mpd_Out" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Mpd_Out" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Mpd_Out" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Mt_Miles" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="New_Load_ID" AttributeName="LEVEL" AttributeValue="INTERVAL"/>
+<DELTA Variable="Org_Area" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Org_Area" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Org_Mkt" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Org_Mkt" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Org_Mkt" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Org_city" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Org_city" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Org_state" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Org_state" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Org_zip" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Org_zip" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Org_zip" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="PTA_Mkt" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="PTA_Mkt" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="PTA_Mkt" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="PU_Date" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="PU_Date" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="PU_Date" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Past_avg_mar_dest_reg" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Past_avg_mar_ori_reg" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Past_avg_mpd_in_dest_reg" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Past_avg_mpd_in_ori_reg" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Past_avg_mpd_out_dest_reg" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Past_avg_mpd_out_ori_reg" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Pta_Area" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Pta_Area" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Pta_City" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Pta_City" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Pta_Date" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Pta_Date" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Pta_Date" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Pta_State" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Pta_State" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Pta_Zip" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Pta_Zip" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Pta_Zip" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Repowers" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Repowers" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Stops" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Stops" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Total_Rev" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Transit_time" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Transit_time" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Transit_time" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Weight" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Weight" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="Weight" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="YIELD" AttributeName="ROLE" AttributeValue="TARGET"/>
+<DELTA Variable="YIELD" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="Yield_Cat" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="Yield_Cat" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="Yield_Cat" AttributeName="COMMENT" AttributeValue="Exceeds percentage of missing cutoff"/>
+<DELTA Variable="adj_del_date" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="adj_del_date" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="adj_del_date" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="adj_pta_date" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="adj_pta_date" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="adj_pta_date" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="cost_to_load" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="cost_to_load" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="cost_to_unload" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="cost_to_unload" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="del_date" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="del_date" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="del_date" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="empty_cost" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="empty_cost" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="empty_cost" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="load_div" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="load_div" AttributeName="LEVEL" AttributeValue="BINARY"/>
+<DELTA Variable="loaded_cost" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="loaded_cost" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="loaded_cost" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="other_cost" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="other_cost" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="other_cost" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="power_div" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="pu_period" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="pu_weel" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="pu_weel" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="stop_cost" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="stop_cost" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="toll_cost" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="toll_cost" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="toll_cost" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="total_nw_cost" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="total_nw_cost" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="total_nw_cost" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="unld_time" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="unld_time" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+<DELTA Variable="unld_time" AttributeName="COMMENT" AttributeValue="Exceeds maximum number of levels cutoff"/>
+<DELTA Variable="wknd_hours" AttributeName="LEVEL" AttributeValue="NOMINAL"/>
+</EmVariableAttributes>
+<EmTargetAttributes>
+<YIELD>
+<DecData Table="EMWS6.Ids_YIELD_DD">
+<Data>
+<Obs YIELD="-85"/>
+<Obs YIELD="744"/>
+<Obs YIELD="329.5"/>
+</Data>
+<Metadata>
+<Variable NAME="YIELD" LABEL="" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecData>
+<DecMeta Table="EMWS6.Ids_YIELD_DM">
+<Data>
+<Obs _TYPE_="MATRIX" VARIABLE="" LABEL="" FORMAT="" LEVEL="PROFIT" TYPE="" COST="" USE="N" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="TARGET" VARIABLE="YIELD" LABEL="" FORMAT="BEST12.0" LEVEL="INTERVAL" TYPE="N" COST="" USE="" MIN="-85" MEAN="286.12146818" MAX="744"/>
+<Obs _TYPE_="PREDICTED" VARIABLE="P_YIELD" LABEL="Predicted: YIELD" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+<Obs _TYPE_="RESIDUAL" VARIABLE="R_YIELD" LABEL="Residual: YIELD" FORMAT="" LEVEL="" TYPE="N" COST="" USE="" MIN="." MEAN="." MAX="."/>
+</Data>
+<Metadata>
+<Variable NAME="_TYPE_" LABEL="Type" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="VARIABLE" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LABEL" LABEL="Label" LENGTH="256" FORMAT="" TYPE="C"/>
+<Variable NAME="FORMAT" LABEL="Format" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Measurement Level" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="COST" LABEL="Cost" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="USE" LABEL="Use" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="MIN" LABEL="Minimum" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MEAN" LABEL="Mean" LENGTH="8" FORMAT="" TYPE="N"/>
+<Variable NAME="MAX" LABEL="Maximum" LENGTH="8" FORMAT="" TYPE="N"/>
+</Metadata>
+</DecMeta>
+</YIELD>
+</EmTargetAttributes>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.IDS.CLASS" COMPONENT="DataSource" ID="Ids2" X="1773" Y="286" DESCRIPTION="NEW_AAA_YIELD" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Ids">
+<PROPERTIES DataSource="newaaayield" Scope="LOCAL" Role="SCORE" Library="TRUCKS_L" Table="NEW_AAA_YIELD" NCols="63" NObs="299587" NBytes="148767744" Segment="" DataSourceRole="SCORE" OutputType="VIEW" ForceRun="N" ComputeStatistics="N" DataSelection="DATASOURCE" NewTable="" MetaAdvisor="BASIC" ApplyIntervalLevelLowerLimit="Y" IntervalLowerLimit="20" ApplyMaxPercentMissing="Y" MaxPercentMissing="50" ApplyMaxClassLevels="Y" MaxClassLevels="20" IdentifyEmptyColumns="Y" VariableValidation="STRICT" NewVariableRole="REJECT" DropMapVariables="Y" DsId="newaaayield" DsSampleName="" DsSampleSizeType="" DsSampleSize="" DsCreatedBy="u47520935" DsCreateDate="1903051134.7" DsModifiedBy="u47520935" DsModifyDate="1903051134.7" DsScope="LOCAL" Sample="D" SampleSizeType="PERCENT" SampleSizePercent="20" SampleSizeObs="10000" DBPassThrough="Y" RunAction="Train" Component="DataSource" Description="">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMDFY.EMIMPUTE.CLASS" COMPONENT="Impute" ID="Impt" X="926" Y="184" DESCRIPTION="Impute" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Impt">
+<PROPERTIES MethodInterval="MEAN" MethodClass="COUNT" MethodTargetInterval="NONE" MethodTargetClass="NONE" ABWTuning="9" AHUBERTuning="1.5" AWAVETuning="6.2831853072" SpacingProportion="90" DefaultChar="" DefaultNum="." RandomSeed="12345" Normalize="Y" ImputeNoMissing="N" MaxPctMissing="50" ValidateTestMissing="N" DistributionMissing="N" LeafSize="5" Maxbranch="2" Maxdepth="6" MinCatSize="5" Nrules="5" Nsurrs="2" Splitsize="." Indicator="UNIQUE" IndicatorRole="INPUT" ReplaceVariable="N" HideVariable="Y" IndicatorSource="IMPUTED" ForceRun="N" RunAction="Train" Component="Impute">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMASSMT.ASSESS.CLASS" COMPONENT="ModelCompare" ID="MdlComp" X="1732" Y="217" DESCRIPTION="Model Comparison" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="ASSESS" TOOLPREFIX="MdlComp">
+<PROPERTIES NumberOfReportedLevels="1E-6" NormalizeReportingVariables="Y" DecileBin="20" LiftEpsilon="1E-6" ProfitEpsilon="1E-6" RoiEpsilon="1E-6" ScoreDistBin="20" RocChart="Y" RocEpsilon="0.01" AssessAllTargetLevels="N" SelectionData="DEFAULT" HPCriteria="DEFAULT" intervalViyaCriteria="DEFAULT" classViyaCriteria="DEFAULT" SelectionTable="TRAIN" SelectionCriteria="DEFAULT" SelectionDepth="10" NumberofBins="20" RecomputeAssess="N" TargetName="YIELD" ModelId="Ensmbl" ModelDescription="Ensemble" ModelCriteria="Valid: Average Squared Error" ForceRun="N" RunAction="Train" Component="ModelCompare" StatisticUsed="_VASE_" TargetLabel="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.NEURAL.CLASS" COMPONENT="NeuralNetwork" ID="Neural" X="1271" Y="214" DESCRIPTION="Neural Network" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Neural">
+<PROPERTIES UseEstimates="N" NetworkArchitecture="MLP" DirectConnection="N" Hidden="3" Prelim="N" PreliminaryRuns="5" PrelimMaxiter="10" PrelimMaxTime="1 HOUR" Maxiter="100" Maxtime="4 HOURS" TrainingTechnique="DEFAULT" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTime="1" GConvValue="1E-6" GConvTime="1" ModelSelectionCriterion="AVERAGE ERROR" SuppressOutput="N" Residuals="Y" Standardizations="N" HiddenUnits="N" TrainCode="" PrelimOutest="" Outest="" Outfit="" InitialDs="" CodefileRes="" CodefileNoRes="" AddHidden="Y" HiddenCombFunction="DEFAULT" HiddenActivation="DEFAULT" HiddenBias="Y" TargetCombFunction="DEFAULT" TargetActivation="DEFAULT" TargetError="DEFAULT" TargetBias="Y" InitialSeed="12345" RandDist="NORMAL" RandScale="0.1" RandLoc="0" InputStandardization="STD" WeightDecay="0" Accelerate="1.2" Decelerate="0.5" Learn="0.1" MaxLearn="50" MinLearn="0.00001" Momentum="0" MaxMomentum="1.75" Tilt="0" ForceRun="N" RunAction="Train" Component="NeuralNetwork">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.NEURAL.CLASS" COMPONENT="NeuralNetwork" ID="Neural2" X="1270" Y="500" DESCRIPTION="NN VS" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Neural">
+<PROPERTIES UseEstimates="N" NetworkArchitecture="MLP" DirectConnection="N" Hidden="3" Prelim="N" PreliminaryRuns="5" PrelimMaxiter="10" PrelimMaxTime="1 HOUR" Maxiter="100" Maxtime="4 HOURS" TrainingTechnique="DEFAULT" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTime="1" GConvValue="1E-6" GConvTime="1" ModelSelectionCriterion="AVERAGE ERROR" SuppressOutput="N" Residuals="Y" Standardizations="N" HiddenUnits="N" TrainCode="" PrelimOutest="" Outest="" Outfit="" InitialDs="" CodefileRes="" CodefileNoRes="" AddHidden="Y" HiddenCombFunction="DEFAULT" HiddenActivation="DEFAULT" HiddenBias="Y" TargetCombFunction="DEFAULT" TargetActivation="DEFAULT" TargetError="DEFAULT" TargetBias="Y" InitialSeed="12345" RandDist="NORMAL" RandScale="0.1" RandLoc="0" InputStandardization="STD" WeightDecay="0" Accelerate="1.2" Decelerate="0.5" Learn="0.1" MaxLearn="50" MinLearn="0.00001" Momentum="0" MaxMomentum="1.75" Tilt="0" ForceRun="N" RunAction="Train" Component="NeuralNetwork">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.NEURAL.CLASS" COMPONENT="NeuralNetwork" ID="Neural3" X="1269" Y="575" DESCRIPTION="NN AOV" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Neural">
+<PROPERTIES UseEstimates="N" NetworkArchitecture="MLP" DirectConnection="N" Hidden="3" Prelim="N" PreliminaryRuns="5" PrelimMaxiter="10" PrelimMaxTime="1 HOUR" Maxiter="100" Maxtime="4 HOURS" TrainingTechnique="DEFAULT" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTime="1" GConvValue="1E-6" GConvTime="1" ModelSelectionCriterion="AVERAGE ERROR" SuppressOutput="N" Residuals="Y" Standardizations="N" HiddenUnits="N" TrainCode="" PrelimOutest="" Outest="" Outfit="" InitialDs="" CodefileRes="" CodefileNoRes="" AddHidden="Y" HiddenCombFunction="DEFAULT" HiddenActivation="DEFAULT" HiddenBias="Y" TargetCombFunction="DEFAULT" TargetActivation="DEFAULT" TargetError="DEFAULT" TargetBias="Y" InitialSeed="12345" RandDist="NORMAL" RandScale="0.1" RandLoc="0" InputStandardization="STD" WeightDecay="0" Accelerate="1.2" Decelerate="0.5" Learn="0.1" MaxLearn="50" MinLearn="0.00001" Momentum="0" MaxMomentum="1.75" Tilt="0" ForceRun="N" RunAction="Train" Component="NeuralNetwork">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.NEURAL.CLASS" COMPONENT="NeuralNetwork" ID="Neural4" X="1263" Y="644" DESCRIPTION="NN PLS" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Neural">
+<PROPERTIES UseEstimates="N" NetworkArchitecture="MLP" DirectConnection="N" Hidden="3" Prelim="N" PreliminaryRuns="5" PrelimMaxiter="10" PrelimMaxTime="1 HOUR" Maxiter="100" Maxtime="4 HOURS" TrainingTechnique="DEFAULT" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTime="1" GConvValue="1E-6" GConvTime="1" ModelSelectionCriterion="AVERAGE ERROR" SuppressOutput="N" Residuals="Y" Standardizations="N" HiddenUnits="N" TrainCode="" PrelimOutest="" Outest="" Outfit="" InitialDs="" CodefileRes="" CodefileNoRes="" AddHidden="Y" HiddenCombFunction="DEFAULT" HiddenActivation="DEFAULT" HiddenBias="Y" TargetCombFunction="DEFAULT" TargetActivation="DEFAULT" TargetError="DEFAULT" TargetBias="Y" InitialSeed="12345" RandDist="NORMAL" RandScale="0.1" RandLoc="0" InputStandardization="STD" WeightDecay="0" Accelerate="1.2" Decelerate="0.5" Learn="0.1" MaxLearn="50" MinLearn="0.00001" Momentum="0" MaxMomentum="1.75" Tilt="0" ForceRun="N" RunAction="Train" Component="NeuralNetwork">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes>
+<DELTA Variable="Loh_Bands" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="PU_day" AttributeName="ROLE" AttributeValue="REJECTED"/>
+</EmVariableAttributes>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.NEURAL.CLASS" COMPONENT="NeuralNetwork" ID="Neural5" X="1262" Y="709" DESCRIPTION="NN ST" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Neural">
+<PROPERTIES UseEstimates="N" NetworkArchitecture="MLP" DirectConnection="N" Hidden="3" Prelim="N" PreliminaryRuns="5" PrelimMaxiter="10" PrelimMaxTime="1 HOUR" Maxiter="100" Maxtime="4 HOURS" TrainingTechnique="DEFAULT" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTime="1" GConvValue="1E-6" GConvTime="1" ModelSelectionCriterion="AVERAGE ERROR" SuppressOutput="N" Residuals="Y" Standardizations="N" HiddenUnits="N" TrainCode="" PrelimOutest="" Outest="" Outfit="" InitialDs="" CodefileRes="" CodefileNoRes="" AddHidden="Y" HiddenCombFunction="DEFAULT" HiddenActivation="DEFAULT" HiddenBias="Y" TargetCombFunction="DEFAULT" TargetActivation="DEFAULT" TargetError="DEFAULT" TargetBias="Y" InitialSeed="12345" RandDist="NORMAL" RandScale="0.1" RandLoc="0" InputStandardization="STD" WeightDecay="0" Accelerate="1.2" Decelerate="0.5" Learn="0.1" MaxLearn="50" MinLearn="0.00001" Momentum="0" MaxMomentum="1.75" Tilt="0" ForceRun="N" RunAction="Train" Component="NeuralNetwork">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes>
+<DELTA Variable="Loh_Bands" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="PU_day" AttributeName="ROLE" AttributeValue="REJECTED"/>
+<DELTA Variable="pu_period" AttributeName="ROLE" AttributeValue="REJECTED"/>
+</EmVariableAttributes>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.NEURAL.CLASS" COMPONENT="NeuralNetwork" ID="Neural6" X="1274" Y="375" DESCRIPTION="NN_Reduced" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Neural">
+<PROPERTIES UseEstimates="N" NetworkArchitecture="MLP" DirectConnection="N" Hidden="3" Prelim="N" PreliminaryRuns="5" PrelimMaxiter="10" PrelimMaxTime="1 HOUR" Maxiter="100" Maxtime="4 HOURS" TrainingTechnique="DEFAULT" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTime="1" GConvValue="1E-6" GConvTime="1" ModelSelectionCriterion="AVERAGE ERROR" SuppressOutput="N" Residuals="Y" Standardizations="N" HiddenUnits="N" TrainCode="" PrelimOutest="" Outest="" Outfit="" InitialDs="" CodefileRes="" CodefileNoRes="" AddHidden="Y" HiddenCombFunction="DEFAULT" HiddenActivation="DEFAULT" HiddenBias="Y" TargetCombFunction="DEFAULT" TargetActivation="DEFAULT" TargetError="DEFAULT" TargetBias="Y" InitialSeed="12345" RandDist="NORMAL" RandScale="0.1" RandLoc="0" InputStandardization="STD" WeightDecay="0" Accelerate="1.2" Decelerate="0.5" Learn="0.1" MaxLearn="50" MinLearn="0.00001" Momentum="0" MaxMomentum="1.75" Tilt="0" ForceRun="N" RunAction="Train" Component="NeuralNetwork">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="PLS" ID="PLS" X="1099" Y="643" DESCRIPTION="Partial Least Squares" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="PLS">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.PLS.SOURCE" Method="PLS" PLSAlgorithm="NIPALS" Maxiter="200" Epsilon="1E-12" DefaultNFactor="Y" UserNFactor="15" CVMethod="NONE" CV_NPara="7" CV_NIter="10" DefaultNTest="Y" CV_NTest="100" DefaultSeed="Y" CV_Seed="1234" CutoffParaEst="0.1" CutoffVIP="0.8" VarSelCriterion="BOTH" ExportVarselResult="Y" HideRejectedVars="Y" ForceRun="N" RunAction="Train" Component="PLS" TOOLTYPE="MODEL" DataNeeded="Y">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMSAMP.EMDPART.CLASS" COMPONENT="Partition" ID="Part" X="496" Y="65" DESCRIPTION="Data Partition" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="SAMPLE" TOOLPREFIX="Part">
+<PROPERTIES Method="DEFAULT" TrainPct="75" ValidatePct="25" TestPct="0" RandomSeed="12345" OutputType="DATA" IntervalDistribution="Y" ClassDistribution="Y" ForceRun="N" RunAction="Train" Component="Partition">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.REGRESSION.CLASS" COMPONENT="Regression" ID="Reg" X="1113" Y="377" DESCRIPTION="Regression Reduced" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Reg">
+<PROPERTIES MainEffect="Y" TwoFactor="N" Polynomial="N" PolynomialDegree="2" Terms="N" Error="NORMAL" LinkFunction="LOGIT" SuppressIntercept="N" InputCoding="DEVIATION" MinResourceUse="N" ModelSelection="STEPWISE" SelectionCriterion="VERROR" SelectionDefault="Y" Sequential="N" SlEntry="0.05" SlStay="0.05" Start="0" Stop="0" Force="0" Hierarchy="CLASS" Rule="NONE" MaxStep="." StepOutput="N" OptimizationTechnique="DEFAULT" ModelDefaults="Y" MaxIterations="." MaxFunctionCalls="." MaxCPUTime="1 HOUR" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTimes="1" GConvValue="1E-6" GConvTimes="1" ClParm="N" Covout="N" CovB="N" CorB="N" Simple="N" SuppressOutput="N" Details="N" PrintDesignMatrix="N" SASSPDS="N" Performance="N" ExcludedVariable="REJECT" ForceRun="N" RunAction="Train" Component="Regression" Interactions="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.REGRESSION.CLASS" COMPONENT="Regression" ID="Reg2" X="1111" Y="430" DESCRIPTION="Regression Full model" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Reg">
+<PROPERTIES MainEffect="Y" TwoFactor="N" Polynomial="N" PolynomialDegree="2" Terms="N" Error="NORMAL" LinkFunction="LOGIT" SuppressIntercept="N" InputCoding="DEVIATION" MinResourceUse="N" ModelSelection="STEPWISE" SelectionCriterion="VERROR" SelectionDefault="N" Sequential="N" SlEntry="1" SlStay="0.5" Start="0" Stop="0" Force="0" Hierarchy="CLASS" Rule="NONE" MaxStep="30" StepOutput="N" OptimizationTechnique="DEFAULT" ModelDefaults="Y" MaxIterations="." MaxFunctionCalls="." MaxCPUTime="1 HOUR" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTimes="1" GConvValue="1E-6" GConvTimes="1" ClParm="N" Covout="N" CovB="N" CorB="N" Simple="N" SuppressOutput="N" Details="N" PrintDesignMatrix="N" SASSPDS="N" Performance="N" ExcludedVariable="REJECT" ForceRun="N" RunAction="Train" Component="Regression" Interactions="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMODL.REGRESSION.CLASS" COMPONENT="Regression" ID="Reg3" X="1113" Y="272" DESCRIPTION="Regression" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Reg">
+<PROPERTIES MainEffect="Y" TwoFactor="N" Polynomial="N" PolynomialDegree="2" Terms="N" Error="NORMAL" LinkFunction="LOGIT" SuppressIntercept="N" InputCoding="DEVIATION" MinResourceUse="N" ModelSelection="STEPWISE" SelectionCriterion="VERROR" SelectionDefault="Y" Sequential="N" SlEntry="0.05" SlStay="0.05" Start="0" Stop="0" Force="0" Hierarchy="CLASS" Rule="NONE" MaxStep="." StepOutput="N" OptimizationTechnique="DEFAULT" ModelDefaults="Y" MaxIterations="." MaxFunctionCalls="." MaxCPUTime="1 HOUR" ConvDefaults="Y" AbsConvValue="-1.34078E154" AbsFValue="0" AbsFTime="1" AbsGValue="0.00001" AbsGTime="1" AbsXValue="1E-8" AbsXTime="1" FConvValue="0" FConvTimes="1" GConvValue="1E-6" GConvTimes="1" ClParm="N" Covout="N" CovB="N" CorB="N" Simple="N" SuppressOutput="N" Details="N" PrintDesignMatrix="N" SASSPDS="N" Performance="N" ExcludedVariable="REJECT" ForceRun="N" RunAction="Train" Component="Regression" Interactions="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="Replace" ID="Repl" X="770" Y="419" DESCRIPTION="Replacement" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Repl">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMDFY.REPLACE.SOURCE" HideVariable="N" UnknownLevel="NONE" ReplaceMethod="COMPUTED" CalcMethod="NONE" MADSCutoff="9.0" SpacingsCutoff="9.0" StddevCutoff="3.0" PercentsCutoff="0.5" CountReport="Y" ForceRun="N" RunAction="Train" Component="Replace" IntervalMethod="NONE" DataNeeded="Y">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<NEWVALUES Type="DATA">
+<Data>
+<Obs NAME="Del_day" LEVEL="Thursday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Del_day" LEVEL="Friday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Del_day" LEVEL="Wednesday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Del_day" LEVEL="Tuesday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Del_day" LEVEL="Monday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Del_day" LEVEL="Saturday" TYPE="C" REPLACE_VALUE="WKND"/>
+<Obs NAME="Del_day" LEVEL="Sunday" TYPE="C" REPLACE_VALUE="WKND"/>
+<Obs NAME="Del_day" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Dst_region" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Loh_Bands" LEVEL="301-400" TYPE="C" REPLACE_VALUE="0-500"/>
+<Obs NAME="Loh_Bands" LEVEL="401-500" TYPE="C" REPLACE_VALUE="0-500"/>
+<Obs NAME="Loh_Bands" LEVEL="201-300" TYPE="C" REPLACE_VALUE="0-500"/>
+<Obs NAME="Loh_Bands" LEVEL="501-600" TYPE="C" REPLACE_VALUE="501-1000"/>
+<Obs NAME="Loh_Bands" LEVEL="601-700" TYPE="C" REPLACE_VALUE="501-1000"/>
+<Obs NAME="Loh_Bands" LEVEL="701-800" TYPE="C" REPLACE_VALUE="501-1000"/>
+<Obs NAME="Loh_Bands" LEVEL="801-900" TYPE="C" REPLACE_VALUE="501-1000"/>
+<Obs NAME="Loh_Bands" LEVEL="901-100" TYPE="C" REPLACE_VALUE="501-1000"/>
+<Obs NAME="Loh_Bands" LEVEL="0-200" TYPE="C" REPLACE_VALUE="0-500"/>
+<Obs NAME="Loh_Bands" LEVEL="1001-11" TYPE="C" REPLACE_VALUE="1001-1500"/>
+<Obs NAME="Loh_Bands" LEVEL="1101-12" TYPE="C" REPLACE_VALUE="1001-1500"/>
+<Obs NAME="Loh_Bands" LEVEL="1301-14" TYPE="C" REPLACE_VALUE="1001-1500"/>
+<Obs NAME="Loh_Bands" LEVEL="1201-13" TYPE="C" REPLACE_VALUE="1001-1500"/>
+<Obs NAME="Loh_Bands" LEVEL="1501+" TYPE="C" REPLACE_VALUE="1501+"/>
+<Obs NAME="Loh_Bands" LEVEL="1401-15" TYPE="C" REPLACE_VALUE="1001-1500"/>
+<Obs NAME="Loh_Bands" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Org_Region" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="PU_day" LEVEL="Tuesday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="PU_day" LEVEL="Wednesday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="PU_day" LEVEL="Thursday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="PU_day" LEVEL="Monday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="PU_day" LEVEL="Friday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="PU_day" LEVEL="Saturday" TYPE="C" REPLACE_VALUE="WKND"/>
+<Obs NAME="PU_day" LEVEL="Sunday" TYPE="C" REPLACE_VALUE="WKND"/>
+<Obs NAME="PU_day" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Past_avg_mar_dest_reg" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Past_avg_mar_ori_reg" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Past_avg_mpd_in_dest_reg" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Past_avg_mpd_in_ori_reg" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Past_avg_mpd_out_dest_reg" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Past_avg_mpd_out_ori_reg" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="Pta_day" LEVEL="Wednesday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Pta_day" LEVEL="Thursday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Pta_day" LEVEL="Friday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Pta_day" LEVEL="Tuesday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Pta_day" LEVEL="Monday" TYPE="C" REPLACE_VALUE="WKD"/>
+<Obs NAME="Pta_day" LEVEL="Saturday" TYPE="C" REPLACE_VALUE="WKND"/>
+<Obs NAME="Pta_day" LEVEL="Sunday" TYPE="C" REPLACE_VALUE="WKND"/>
+<Obs NAME="Pta_day" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="power_div" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="pu_period" LEVEL="2019 P02" TYPE="C" REPLACE_VALUE="2019first"/>
+<Obs NAME="pu_period" LEVEL="2019 P03" TYPE="C" REPLACE_VALUE="2019first"/>
+<Obs NAME="pu_period" LEVEL="2019 P04" TYPE="C" REPLACE_VALUE="2019first"/>
+<Obs NAME="pu_period" LEVEL="2019 P05" TYPE="C" REPLACE_VALUE="2019first"/>
+<Obs NAME="pu_period" LEVEL="2018 P02" TYPE="C" REPLACE_VALUE="2018first"/>
+<Obs NAME="pu_period" LEVEL="2018 P03" TYPE="C" REPLACE_VALUE="2018first"/>
+<Obs NAME="pu_period" LEVEL="2019 P08" TYPE="C" REPLACE_VALUE="2019second"/>
+<Obs NAME="pu_period" LEVEL="2019 P06" TYPE="C" REPLACE_VALUE="2019first"/>
+<Obs NAME="pu_period" LEVEL="2019 P10" TYPE="C" REPLACE_VALUE="2019second"/>
+<Obs NAME="pu_period" LEVEL="2019 P01" TYPE="C" REPLACE_VALUE="2019first"/>
+<Obs NAME="pu_period" LEVEL="2018 P04" TYPE="C" REPLACE_VALUE="2018first"/>
+<Obs NAME="pu_period" LEVEL="2019 P011" TYPE="C" REPLACE_VALUE="2019second"/>
+<Obs NAME="pu_period" LEVEL="2018 P05" TYPE="C" REPLACE_VALUE="2018first"/>
+<Obs NAME="pu_period" LEVEL="2018 P08" TYPE="C" REPLACE_VALUE="2018second"/>
+<Obs NAME="pu_period" LEVEL="2017 P8" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="2018 P011" TYPE="C" REPLACE_VALUE="2018second"/>
+<Obs NAME="pu_period" LEVEL="2017 P10" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="2019 P07" TYPE="C" REPLACE_VALUE="2019second"/>
+<Obs NAME="pu_period" LEVEL="2017 P11" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="2017 P7" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="2018 P10" TYPE="C" REPLACE_VALUE="2018second"/>
+<Obs NAME="pu_period" LEVEL="2019 P09" TYPE="C" REPLACE_VALUE="2019second"/>
+<Obs NAME="pu_period" LEVEL="2017 P9" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="2018 P01" TYPE="C" REPLACE_VALUE="2018first"/>
+<Obs NAME="pu_period" LEVEL="2018 P06" TYPE="C" REPLACE_VALUE="2018first"/>
+<Obs NAME="pu_period" LEVEL="2018 P07" TYPE="C" REPLACE_VALUE="2018second"/>
+<Obs NAME="pu_period" LEVEL="2018 P012" TYPE="C" REPLACE_VALUE="2018second"/>
+<Obs NAME="pu_period" LEVEL="2018 P09" TYPE="C" REPLACE_VALUE="2018second"/>
+<Obs NAME="pu_period" LEVEL="2017 P12" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="2019 P012" TYPE="C" REPLACE_VALUE="2017second"/>
+<Obs NAME="pu_period" LEVEL="_UNKNOWN_" TYPE="C" REPLACE_VALUE="_DEFAULT_"/>
+<Obs NAME="wknd_hours" LEVEL="_UNKNOWN_" TYPE="N" REPLACE_VALUE="_DEFAULT_"/>
+</Data>
+<Metadata>
+<Variable NAME="Name" LABEL="Variable" LENGTH="32" FORMAT="" TYPE="C"/>
+<Variable NAME="LEVEL" LABEL="Formatted Value" LENGTH="12" FORMAT="" TYPE="C"/>
+<Variable NAME="TYPE" LABEL="Type" LENGTH="1" FORMAT="" TYPE="C"/>
+<Variable NAME="REPLACE_VALUE" LABEL="Replacement Value" LENGTH="200" FORMAT="" TYPE="C"/>
+</Metadata>
+</NEWVALUES>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMUTIL.EMSCORE.CLASS" COMPONENT="Score" ID="Score" X="1916" Y="205" DESCRIPTION="Score" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="ASSESS" TOOLPREFIX="Score">
+<PROPERTIES OutputType="VIEW" FixedOutputNames="Y" HideVariables="N" HideInput="Y" HideTarget="Y" HideRejected="Y" HideAssess="Y" HidePredict="Y" HideFreq="Y" HideClassification="Y" HideResidual="Y" HideOther="Y" ScoreValidate="N" ScoreTest="N" CScore="N" JScore="N" PackageName="DEFAULT" UserPackageName="" PreferenceName="" OptimizedCode="Y" GraphReports="Y" ForceRun="N" RunAction="Train" Component="Score">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMEXPL.STATEXPLORE.CLASS" COMPONENT="StatExplore" ID="Stat" X="348" Y="231" DESCRIPTION="StatExplore" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Stat">
+<PROPERTIES BySegment="N" Correlation="Y" Spearman="N" Pearson="Y" ChiSquare="Y" ChiSquareInterval="N" ChiSquareIntervalNBins="5" MaximumVars="1000" HideVariable="Y" DropRejected="Y" UseValidate="N" UseTest="N" UseScore="N" NObs="100000" IntervalDistribution="Y" ClassDistribution="Y" LevelSummary="Y" ForceRun="N" RunAction="Train" Component="StatExplore">
+<VariableProperties/>
+<EmVariableAttributes/>
+<EmTargetAttributes/>
+<EmFileProperties>
+<CROSSTAB Type="DATA">
+<Data/>
+<Metadata/>
+</CROSSTAB>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMMDFY.EMTRANS.CLASS" COMPONENT="Transform" ID="Trans" X="620" Y="177" DESCRIPTION="Transform Variables" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODIFY" TOOLPREFIX="Trans">
+<PROPERTIES DefaultMethod="NONE" DefaultTargetMethod="NONE" DefaultClassMethod="NONE" DefaultClassTargetMethod="NONE" Offset="1" MinOffset="Y" HideVariable="Y" RejectVariable="Y" GroupCutoff="0.1" GroupMissing="N" EmRandomSeed="12345" EmSampleSize="DEFAULT" EmSampleMethod="FIRSTN" MissingValue="USEINSEARCH" SummaryVariables="TRANSFORMED" SummaryStatistics="Y" UseMetaTransform="Y" MissingAsLevel="N" NumberofBins="VARIABLES" MaxOptimalBins="4" ForceRun="N" RunAction="Train" Component="Transform">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes>
+<DELTA Variable="Acc_Rev" AttributeName="METHOD" AttributeValue="LOG"/>
+<DELTA Variable="Del_day" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Delay" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dest_Area" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dst_Mkt" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dst_State" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dst_Zip" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dst_city" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dst_region" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Dwell" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="FSC" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="FWD_Yield" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="IT_delay" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Lane" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Ld_time" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Loaded_Miles" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Loh_Bands" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="MAR" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Margin" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Mpd_In" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Mpd_Out" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Mt_Miles" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Org_Area" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Org_Mkt" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Org_Region" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Org_city" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Org_state" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Org_zip" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="PTA_Mkt" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="PU_Date" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="PU_day" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Past_avg_mar_dest_reg" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Past_avg_mar_ori_reg" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Past_avg_mpd_in_dest_reg" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Past_avg_mpd_in_ori_reg" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Past_avg_mpd_out_dest_reg" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Past_avg_mpd_out_ori_reg" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Pta_Area" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Pta_City" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Pta_Date" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Pta_State" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Pta_Zip" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Pta_day" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Repowers" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Stops" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Total_Rev" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Transit_time" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Weight" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="YIELD" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="Yield_Cat" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="adj_del_date" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="adj_pta_date" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="cost_to_load" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="cost_to_unload" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="del_date" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="empty_cost" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="load_div" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="loaded_cost" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="other_cost" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="power_div" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="pu_period" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="pu_weel" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="stop_cost" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="toll_cost" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="total_nw_cost" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="unld_time" AttributeName="METHOD" AttributeValue="NONE"/>
+<DELTA Variable="wknd_hours" AttributeName="METHOD" AttributeValue="NONE"/>
+</EmVariableAttributes>
+<EmFileProperties>
+<INTERACTION Type="DATA">
+<Data/>
+<Metadata/>
+</INTERACTION>
+<FORMULA Type="DATA">
+<Data/>
+<Metadata/>
+</FORMULA>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="DecisionTree" ID="Tree" X="657" Y="38" DESCRIPTION="MAX TREE" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Tree">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.TREE.SOURCE" ToolType="MODEL" TrainMode="BATCH" ImportModel="N" Freeze="N" UseMultipleTarget="N" Precision="4" IntervalCriterion="PROBF" NominalCriterion="PROBCHISQ" OrdinalCriterion="ENTROPY" SigLevel="0.2" Splitsize="." LeafSize="5" MinCatSize="5" Maxbranch="2" Maxdepth="6" Nrules="5" Nsurrs="0" MissingValue="USEINSEARCH" UseVarOnce="N" SplitPrecision="4" Subtree="ASSESSMENT" NSubtree="1" AssessMeasure="MISC" AssessPercentage="0.25" NodeSample="20000" Exhaustive="5000" Kass="Y" KassApply="BEFORE" Depth="Y" Inputs="N" NumInputs="1" VarSelection="Y" Leafid="Y" NodeRole="SEGMENT" Performance="DISK" CV="N" CVNIter="10" CVRepeat="1" CVSeed="12345" ObsImportance="N" NumSingleImp="5" UseDecision="N" UsePriors="N" ClassColorBy="PERCENTCORRECT" IntColorBy="AVG" ShowNodeId="Y" ShowValid="Y" Pred="N" Target="ALL" Count="Y" ProfitLoss="NONE" PercentCorrect="N" AVG="Y" RASE="N" CreateSample="DEFAULT" SampleMethod="RANDOM" SampleSize="10000" SampleSeed="12345" ForceRun="N" RunAction="Train" Component="DecisionTree" Criterion="DEFAULT" Dummy="N" Predict="Y" ImportedTreeData="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="DecisionTree" ID="Tree2" X="653" Y="93" DESCRIPTION="3 Branch" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Tree">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.TREE.SOURCE" ToolType="MODEL" TrainMode="BATCH" ImportModel="N" Freeze="N" UseMultipleTarget="N" Precision="4" IntervalCriterion="PROBF" NominalCriterion="PROBCHISQ" OrdinalCriterion="ENTROPY" SigLevel="0.2" Splitsize="." LeafSize="5" MinCatSize="5" Maxbranch="3" Maxdepth="6" Nrules="5" Nsurrs="0" MissingValue="USEINSEARCH" UseVarOnce="N" SplitPrecision="4" Subtree="ASSESSMENT" NSubtree="1" AssessMeasure="ASE" AssessPercentage="0.25" NodeSample="20000" Exhaustive="5000" Kass="Y" KassApply="BEFORE" Depth="Y" Inputs="N" NumInputs="1" VarSelection="Y" Leafid="Y" NodeRole="SEGMENT" Performance="DISK" CV="N" CVNIter="10" CVRepeat="1" CVSeed="12345" ObsImportance="N" NumSingleImp="5" UseDecision="N" UsePriors="N" ClassColorBy="PERCENTCORRECT" IntColorBy="AVG" ShowNodeId="Y" ShowValid="Y" Pred="N" Target="ALL" Count="Y" ProfitLoss="NONE" PercentCorrect="N" AVG="Y" RASE="N" CreateSample="DEFAULT" SampleMethod="RANDOM" SampleSize="10000" SampleSeed="12345" ForceRun="N" RunAction="Train" Component="DecisionTree" Criterion="DEFAULT" Dummy="N" Predict="Y" ImportedTreeData="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMCORE.EXTENSION.CLASS" COMPONENT="DecisionTree" ID="Tree3" X="1097" Y="707" DESCRIPTION="Selection Tree" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="MODEL" TOOLPREFIX="Tree">
+<PROPERTIES Location="CATALOG" Catalog="SASHELP.EMMODL.TREE.SOURCE" ToolType="MODEL" TrainMode="BATCH" ImportModel="N" Freeze="N" UseMultipleTarget="N" Precision="4" IntervalCriterion="PROBF" NominalCriterion="PROBCHISQ" OrdinalCriterion="ENTROPY" SigLevel="0.2" Splitsize="." LeafSize="5" MinCatSize="5" Maxbranch="2" Maxdepth="6" Nrules="5" Nsurrs="1" MissingValue="USEINSEARCH" UseVarOnce="N" SplitPrecision="4" Subtree="LARGEST" NSubtree="1" AssessMeasure="PROFIT/LOSS" AssessPercentage="0.25" NodeSample="20000" Exhaustive="5000" Kass="Y" KassApply="BEFORE" Depth="Y" Inputs="N" NumInputs="1" VarSelection="Y" Leafid="Y" NodeRole="SEGMENT" Performance="DISK" CV="N" CVNIter="10" CVRepeat="1" CVSeed="12345" ObsImportance="N" NumSingleImp="5" UseDecision="N" UsePriors="N" ClassColorBy="PERCENTCORRECT" IntColorBy="AVG" ShowNodeId="Y" ShowValid="Y" Pred="N" Target="ALL" Count="Y" ProfitLoss="NONE" PercentCorrect="N" AVG="Y" RASE="N" CreateSample="DEFAULT" SampleMethod="RANDOM" SampleSize="10000" SampleSeed="12345" ForceRun="N" RunAction="Train" Component="DecisionTree" Criterion="DEFAULT" Dummy="N" Predict="Y" ImportedTreeData="">
+<VariableProperties/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<USERTRAINCODE Type="EXTERNAL" Extension="sas">
+<Data/>
+</USERTRAINCODE>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMEXPL.VARSELECTION.CLASS" COMPONENT="VariableSelection" ID="Varsel" X="1112" Y="499" DESCRIPTION="Variable Selection" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Varsel">
+<PROPERTIES TargetModel="RSQUARE" HideRejectedVars="Y" MaxMissingPercent="50" MaxLevel="100" RejectUnusedInputVars="Y" ByPassVars="NONE" ByPassVarsRole="INPUT" HideUnusedInputVars="Y" UseAov16="N" UseInteractions="N" UseGroups="Y" MinR2="0.005" StopR2="0.0005" MaxRows="3000" Passes="6" ChiSquare="3.84" Bins="50" SASSPDS="Y" PrintOption="DEFAULT" ForceRun="N" RunAction="Train" Component="VariableSelection" VarselLabel="VARSELLABEL" RoleUnusedVars="DEFAULT">
+<VariableProperties/>
+<ManualSelectionVariables/>
+<NameMappings/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+<NODE CLASS="SASHELP.EMEXPL.VARSELECTION.CLASS" COMPONENT="VariableSelection" ID="Varsel2" X="1104" Y="577" DESCRIPTION="AOV VS" DIAGRAMID="_ROOT_" PARENTID="" TOOLTYPE="EXPLORE" TOOLPREFIX="Varsel">
+<PROPERTIES TargetModel="RSQUARE" HideRejectedVars="Y" MaxMissingPercent="50" MaxLevel="100" RejectUnusedInputVars="Y" ByPassVars="NONE" ByPassVarsRole="INPUT" HideUnusedInputVars="Y" UseAov16="Y" UseInteractions="N" UseGroups="Y" MinR2="0.005" StopR2="0.0005" MaxRows="3000" Passes="6" ChiSquare="3.84" Bins="50" SASSPDS="Y" PrintOption="DEFAULT" ForceRun="N" RunAction="Train" Component="VariableSelection" VarselLabel="VARSELLABEL" RoleUnusedVars="DEFAULT">
+<VariableProperties/>
+<ManualSelectionVariables/>
+<NameMappings/>
+<EmTargetAttributes/>
+<EmVariableAttributes/>
+<EmFileProperties>
+<EMNOTES Type="EXTERNAL" Extension="txt">
+<Data/>
+</EMNOTES>
+</EmFileProperties>
+</PROPERTIES>
+</NODE>
+</NODES>
+<CONNECTIONS>
+<CONNECTION FROM="Part" TO="Trans"/>
+<CONNECTION FROM="Part" TO="Tree"/>
+<CONNECTION FROM="Part" TO="Tree2"/>
+<CONNECTION FROM="Tree2" TO="CNTRL"/>
+<CONNECTION FROM="Tree" TO="CNTRL"/>
+<CONNECTION FROM="CNTRL" TO="Ensmbl"/>
+<CONNECTION FROM="CNTRL" TO="MdlComp"/>
+<CONNECTION FROM="MdlComp" TO="Score"/>
+<CONNECTION FROM="Ensmbl" TO="MdlComp"/>
+<CONNECTION FROM="Impt" TO="Tree3"/>
+<CONNECTION FROM="Impt" TO="PLS"/>
+<CONNECTION FROM="Impt" TO="Varsel2"/>
+<CONNECTION FROM="Impt" TO="Varsel"/>
+<CONNECTION FROM="Impt" TO="Reg2"/>
+<CONNECTION FROM="Impt" TO="Reg"/>
+<CONNECTION FROM="Impt" TO="Reg3"/>
+<CONNECTION FROM="Reg3" TO="CNTRL"/>
+<CONNECTION FROM="Reg2" TO="CNTRL"/>
+<CONNECTION FROM="Varsel" TO="Neural2"/>
+<CONNECTION FROM="Varsel2" TO="Neural3"/>
+<CONNECTION FROM="PLS" TO="Neural4"/>
+<CONNECTION FROM="Tree3" TO="Neural5"/>
+<CONNECTION FROM="Neural5" TO="CNTRL"/>
+<CONNECTION FROM="Neural4" TO="CNTRL"/>
+<CONNECTION FROM="Neural3" TO="CNTRL"/>
+<CONNECTION FROM="Neural2" TO="CNTRL"/>
+<CONNECTION FROM="Neural" TO="CNTRL"/>
+<CONNECTION FROM="AutoNeural" TO="CNTRL"/>
+<CONNECTION FROM="Ids2" TO="Score"/>
+<CONNECTION FROM="Ids" TO="Stat"/>
+<CONNECTION FROM="Ids" TO="Part"/>
+<CONNECTION FROM="Reg3" TO="Neural"/>
+<CONNECTION FROM="Reg3" TO="AutoNeural"/>
+<CONNECTION FROM="Reg" TO="Neural6"/>
+<CONNECTION FROM="Trans" TO="Impt"/>
+</CONNECTIONS>
+<NOTES>
+<DATA><![CDATA[
+
+
+]]>
+</DATA>
+</NOTES>
+</Workspace>
+</_ROOT_>
